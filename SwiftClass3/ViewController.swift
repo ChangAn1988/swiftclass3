@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         
         switch constellation {
             
-        case "射手座":
+        case "射手座","水瓶座","天蠍座":
             if segmentForGender.selectedSegmentIndex == 1 && switchForTrue.isOn && Int(ageToNum.text!)! < 31 {
                 
                 segmentForAns.selectedSegmentIndex = 0
@@ -43,32 +43,7 @@ class ViewController: UIViewController {
                 segmentForAns.isHidden = false
                 
             }
-            
-        case "水瓶座":
-            if segmentForGender.selectedSegmentIndex == 1 && switchForTrue.isOn && Int(ageToNum.text!)! < 31 {
-                
-                segmentForAns.selectedSegmentIndex = 0
-                segmentForAns.isHidden = false
-                
-            } else {
-                
-                segmentForAns.selectedSegmentIndex = 1
-                segmentForAns.isHidden = false
-                
-            }
-            
-        case "天蠍座":
-            if segmentForGender.selectedSegmentIndex == 1 && switchForTrue.isOn && Int(ageToNum.text!)! < 31 {
-                
-                segmentForAns.selectedSegmentIndex = 0
-                segmentForAns.isHidden = false
-                
-            } else {
-                
-                segmentForAns.selectedSegmentIndex = 1
-                segmentForAns.isHidden = false
-                
-            }
+
             
         default:
             segmentForAns.selectedSegmentIndex = 1
